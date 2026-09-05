@@ -65,6 +65,28 @@
 
 .portrait figcaption small { color: #c8c3b8; font-size: .55rem; }
 
+/* Profile details */
+.profile-name { display: flex; align-items: baseline; gap: 1rem; margin-bottom: 1.5rem; color: var(--ink); }
+.profile-name strong { font-size: 1.15rem; font-weight: 500; letter-spacing: .12em; }
+.profile-name span { font: 500 .72rem var(--serif); color: var(--gold); letter-spacing: .16em; }
+.profile-statement { margin: 2rem 0; padding: 1.5rem 0 1.5rem 1.5rem; border-left: 1px solid var(--gold); color: var(--ink); font-size: 1rem; line-height: 2.1; }
+.career { margin-top: 2.75rem; padding-top: 1.75rem; border-top: 1px solid rgba(17,17,16,.14); font-size: .78rem; line-height: 2; color: #625e57; }
+.career-title { margin: 0 0 1rem; font: 500 .62rem var(--serif); letter-spacing: .25em; color: var(--gold); }
+.career > p { margin: .75rem 0; }
+.career ul { display: flex; flex-wrap: wrap; gap: .25rem 1.25rem; margin: .7rem 0 1.25rem; padding: 0; list-style: none; font: 500 .72rem var(--serif); letter-spacing: .08em; color: var(--ink); }
+.career li:not(:last-child)::after { content: "·"; margin-left: 1.25rem; color: var(--gold); }
+
+/* Contact routes */
+.inquiry-list { width: min(920px, 100%); margin: 3.5rem auto 0; padding: 1.5rem 0; border-top: 1px solid rgba(17,17,16,.15); border-bottom: 1px solid rgba(17,17,16,.15); display: grid; grid-template-columns: repeat(4, 1fr); gap: 1rem 1.5rem; list-style: none; color: #5d5952; font-size: .72rem; line-height: 1.7; }
+.inquiry-list li::before { content: "—"; margin-right: .6em; color: var(--gold); }
+.contact-actions { width: min(920px, 100%); margin: 3.5rem auto 1.5rem; display: grid; grid-template-columns: 1.35fr 1fr 1fr; gap: 1rem; }
+.contact-actions .contact-button { width: 100%; min-height: 120px; margin: 0; }
+.contact-button-secondary { background: transparent; color: var(--ink); box-shadow: none; }
+.contact-button-secondary:hover,.contact-button-secondary:focus-visible { color: var(--paper); }
+.is-pending { cursor: default; opacity: .52; }
+.is-pending:hover { transform: none; background: var(--ink); box-shadow: 0 14px 35px rgba(17,17,16,.12); }
+footer .is-pending { opacity: .45; }
+
 @media (max-width: 850px) {
   .hero { min-height: 620px; }
   .hero-image { object-position: 54% center; }
@@ -79,6 +101,11 @@
   .portrait img { object-position: 58% center; }
   .portrait figcaption { right: 20px; bottom: 20px; left: 20px; }
   .portrait figcaption small { display: none; }
+  .career ul { display: block; }
+  .career li::after { display: none; }
+  .inquiry-list { grid-template-columns: repeat(2, 1fr); text-align: left; }
+  .contact-actions { grid-template-columns: 1fr; }
+  .contact-actions .contact-button { min-height: 100px; }
 }
 
 /* Responsive typography and touch-target refinements */

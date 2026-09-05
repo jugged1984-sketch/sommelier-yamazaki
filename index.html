@@ -50,9 +50,20 @@
     <section class="section about" id="about" aria-labelledby="about-title">
       <div class="section-label"><span>01</span><p>ABOUT</p></div>
       <div class="about-content">
-        <p class="eyebrow">SOMMELIER / TOKYO</p>
+        <p class="eyebrow">PROFILE / SHO YAMAZAKI</p>
         <h2 id="about-title"><span>一杯のワインから、</span><span>新しい景色を。</span></h2>
-        <div class="about-copy"><p>東京・湯島を拠点に活動するソムリエ、山崎 翔。</p><p>ワインを単なる飲み物としてではなく、食、人、空間、そして音楽をつなぐ文化として捉え、その魅力を自由な感性で提案します。</p></div>
+        <div class="about-copy">
+          <p class="profile-name"><strong>山崎 翔</strong><span>Sho Yamazaki</span></p>
+          <p>J.S.A.認定ワインエキスパート。元プロギタリストとして磨いた感性と構成力を、ワイン選定、ペアリング、接客、空間づくりに活かしています。</p>
+          <p class="profile-statement">ワインを単なる飲み物ではなく、<br>食、人、音楽、空間をつなぐ体験として提案する。</p>
+          <p>その一杯が新しい出会いや豊かな時間へつながるように。<br>「ワインを、もっと自由に。人生を、もっと豊かに。」を一つひとつの体験に映します。</p>
+        </div>
+        <div class="career" aria-labelledby="career-title">
+          <p class="career-title" id="career-title">EXPERIENCE</p>
+          <p>都内レストラン・ワインバーにて<br>ソムリエ／マネージャーを歴任</p>
+          <ul aria-label="勤務経験のある店舗"><li>cinq</li><li>Braceria BAVA</li><li>VANNO</li><li>bistronomie Avin</li></ul>
+          <p>ワインコミュニティ「CAMOS TOKYO」運営責任者</p>
+        </div>
       </div>
       <figure class="portrait">
         <img src="1000002827.jpg" alt="ワインボトルとワイングラスを手にするソムリエ山崎翔" width="768" height="1024" loading="lazy" decoding="async">
@@ -94,11 +105,18 @@
 
     <section class="contact" id="contact" aria-labelledby="contact-title">
       <p class="eyebrow">CONTACT</p><h2 id="contact-title">ともに、心に残る<br>時間をつくりませんか。</h2>
-      <p>イベントのご相談、ソムリエサービス、飲食店コンサルティングなど、<br>まずはお気軽にお問い合わせください。</p>
-      <a class="contact-button" href="mailto:contact@example.com"><span>お問い合わせ</span><small>GET IN TOUCH</small><i>↗</i></a>
-      <p class="contact-note">※ メールアドレスは公開時に正式なアドレスへ差し替えてください。</p>
+      <p>サービスのご依頼から取材・メディア出演まで、<br>内容が固まっていない段階でもお気軽にご相談ください。</p>
+      <ul class="inquiry-list" aria-label="ご相談いただける内容">
+        <li>ソムリエサービス</li><li>ワインイベント</li><li>ワインセレクション</li><li>飲食店コンサルティング</li><li>飲食店立ち上げ支援</li><li>SNS / Instagramコンサルティング</li><li>取材 / メディア出演</li><li>その他</li>
+      </ul>
+      <div class="contact-actions">
+        <a class="contact-button is-pending" data-contact-link="inquiry" aria-disabled="true"><span>お問い合わせ</span><small>GET IN TOUCH</small><i>↗</i></a>
+        <a class="contact-button contact-button-secondary is-pending" data-contact-link="instagram" aria-disabled="true"><span>Instagram</span><small>FOLLOW &amp; MESSAGE</small><i>↗</i></a>
+        <a class="contact-button contact-button-secondary" href="#places"><span>tsuki-akari</span><small>WINE BAR / YUSHIMA</small><i>↓</i></a>
+      </div>
+      <p class="contact-note">お問い合わせ・Instagramはリンク公開準備中です。</p>
     </section>
   </main>
-  <footer><a class="brand footer-brand" href="#top"><span>SY</span><small>SOMMELIER SHO YAMAZAKI</small></a><div><a href="#about">ABOUT</a><a href="#services">SERVICES</a><a href="#contact">CONTACT</a><a href="#">INSTAGRAM ↗</a></div><p>© <span data-year></span> SHO YAMAZAKI</p></footer>
+  <footer><a class="brand footer-brand" href="#top"><span>SY</span><small>SOMMELIER SHO YAMAZAKI</small></a><div><a href="#about">ABOUT</a><a href="#services">SERVICES</a><a href="#contact">CONTACT</a><a class="is-pending" data-contact-link="instagram" aria-disabled="true">INSTAGRAM ↗</a></div><p>© <span data-year></span> SHO YAMAZAKI</p></footer>
 </body>
 </html>
