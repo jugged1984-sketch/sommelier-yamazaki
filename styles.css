@@ -83,9 +83,6 @@
 .contact-actions .contact-button { width: 100%; min-height: 120px; margin: 0; }
 .contact-button-secondary { background: transparent; color: var(--ink); box-shadow: none; }
 .contact-button-secondary:hover,.contact-button-secondary:focus-visible { color: var(--paper); }
-.is-pending { cursor: default; opacity: .52; }
-.is-pending:hover { transform: none; background: var(--ink); box-shadow: 0 14px 35px rgba(17,17,16,.12); }
-footer .is-pending { opacity: .45; }
 
 /* Inquiry form */
 .inquiry-panel { scroll-margin-top: 90px; width: min(1040px, 100%); margin: 7rem auto 0; padding: clamp(4rem, 7vw, 6.5rem) clamp(2rem, 8vw, 8rem); background: #ebe8df; color: var(--ink); text-align: left; border: 1px solid rgba(17,17,16,.12); border-top-color: var(--gold); box-shadow: 0 28px 70px rgba(17,17,16,.11); }
