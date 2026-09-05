@@ -164,3 +164,43 @@
   .hero h1 { font-size: 3rem; }
   footer { padding-right: 18px; padding-left: 18px; }
 }
+
+/* Sho Yamazaki personal brand */
+.site-header .brand { flex-direction: column; align-items: flex-start; gap: 3px; }
+.site-header .brand strong { font: 400 1.08rem var(--jp); letter-spacing: .18em; white-space: nowrap; }
+.site-header .brand small { max-width: none; font-size: .58rem; letter-spacing: .22em; line-height: 1.2; white-space: nowrap; }
+
+.hero-inner { width: min(980px, calc(100% - 48px)); }
+.hero .eyebrow { margin: 0 0 clamp(1.35rem, 3vh, 2.3rem); }
+.hero h1.hero-brand { margin: 0; font: inherit; line-height: 1; letter-spacing: normal; }
+.hero-logo-frame { display: block; width: min(100%, 900px); aspect-ratio: 3.45 / 1; margin: 0 auto; overflow: hidden; }
+.hero h1 .hero-logo-frame img { display: block; width: 100%; height: auto; transform: translateY(-10.2%); filter: drop-shadow(0 4px 18px rgba(0,0,0,.35)); }
+.hero h1 .hero-name { display: block; margin-top: clamp(.8rem, 1.7vh, 1.25rem); color: var(--paper); font: 500 clamp(.82rem, 1.25vw, 1.05rem)/1.2 var(--serif); letter-spacing: .38em; }
+.hero-role { margin: clamp(.75rem, 1.5vh, 1.15rem) 0 0; font-size: clamp(.82rem, 1.1vw, 1rem); font-weight: 300; letter-spacing: .18em; }
+.hero-fields { margin: clamp(.7rem, 1.4vh, 1rem) 0 0; color: var(--gold); font: 500 clamp(.55rem, .75vw, .68rem)/1.4 var(--serif); letter-spacing: .28em; }
+.hero-copy { margin: clamp(1.8rem, 4vh, 3rem) 0 0; }
+.hero-role { animation-delay: .25s; }
+.hero-fields { animation-delay: .32s; }
+.hero-copy { animation-delay: .42s; }
+
+@media (max-width: 850px) {
+  .site-header .brand { gap: 2px; }
+  .site-header .brand strong { font-size: .92rem; letter-spacing: .14em; }
+  .site-header .brand small { font-size: .5rem; letter-spacing: .18em; }
+  .hero { min-height: 680px; }
+  .hero-inner { width: calc(100% - 40px); padding-top: 3rem; }
+  .hero-logo-frame { width: min(100%, 620px); }
+  .hero h1 .hero-name { margin-top: .9rem; font-size: .78rem; letter-spacing: .3em; }
+  .hero-role { margin-top: .85rem; font-size: .78rem; letter-spacing: .12em; }
+  .hero-fields { max-width: 100%; margin-top: .75rem; font-size: .52rem; letter-spacing: .15em; white-space: nowrap; }
+  .hero-copy { margin-top: 2rem; font-size: clamp(.98rem, 4.4vw, 1.15rem); line-height: 2; letter-spacing: .12em; }
+}
+
+@media (max-width: 380px) {
+  .site-header .brand small { max-width: none; font-size: .48rem; }
+  .hero-inner { width: calc(100% - 32px); }
+  .hero h1.hero-brand { font-size: inherit; }
+  .hero h1 .hero-name { letter-spacing: .25em; }
+  .hero-role { font-size: .73rem; letter-spacing: .08em; }
+  .hero-fields { font-size: .48rem; letter-spacing: .09em; }
+}
