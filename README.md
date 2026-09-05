@@ -53,7 +53,6 @@ HEROとABOUTには実写真を使用しています。プロジェクトの2箇�
 
 ## 公開前に必要な変更
 
-- `script.js` 冒頭の `contactLinks.instagram` を正式なInstagramプロフィールURLへ変更
 - OGP画像、canonical URL、faviconを追加
 - 実写真と、写真に即した代替テキストを追加
 - 必要に応じてプライバシーポリシーや問い合わせフォームを追加
