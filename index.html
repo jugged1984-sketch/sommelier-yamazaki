@@ -110,11 +110,54 @@
         <li>ソムリエサービス</li><li>ワインイベント</li><li>ワインセレクション</li><li>飲食店コンサルティング</li><li>飲食店立ち上げ支援</li><li>SNS / Instagramコンサルティング</li><li>取材 / メディア出演</li><li>その他</li>
       </ul>
       <div class="contact-actions">
-        <a class="contact-button is-pending" data-contact-link="inquiry" aria-disabled="true"><span>お問い合わせ</span><small>GET IN TOUCH</small><i>↗</i></a>
+        <a class="contact-button" href="#inquiry-form"><span>お問い合わせ</span><small>GET IN TOUCH</small><i>↓</i></a>
         <a class="contact-button contact-button-secondary is-pending" data-contact-link="instagram" aria-disabled="true"><span>Instagram</span><small>FOLLOW &amp; MESSAGE</small><i>↗</i></a>
-        <a class="contact-button contact-button-secondary" href="#places"><span>tsuki-akari</span><small>WINE BAR / YUSHIMA</small><i>↓</i></a>
+        <a class="contact-button contact-button-secondary" href="https://tsuki-akari.tokyo/" target="_blank" rel="noopener noreferrer"><span>tsuki-akari</span><small>WINE BAR / YUSHIMA</small><i>↗</i></a>
       </div>
-      <p class="contact-note">お問い合わせ・Instagramはリンク公開準備中です。</p>
+      <p class="contact-note">Instagramはリンク公開準備中です。</p>
+
+      <div class="inquiry-panel" id="inquiry-form">
+        <div class="inquiry-heading">
+          <p class="eyebrow">INQUIRY FORM</p>
+          <h3>ご相談内容を<br>お聞かせください。</h3>
+          <p>必要事項をご入力のうえ、送信してください。<br>内容を確認後、ご連絡いたします。</p>
+        </div>
+        <form class="inquiry-form" action="https://formspree.io/f/xqpklrnd" method="POST" data-inquiry-form>
+          <div class="form-field">
+            <label for="inquiry-name">お名前 <span>REQUIRED</span></label>
+            <input id="inquiry-name" name="name" type="text" autocomplete="name" required aria-required="true">
+          </div>
+          <div class="form-field">
+            <label for="inquiry-email">メールアドレス <span>REQUIRED</span></label>
+            <input id="inquiry-email" name="email" type="email" autocomplete="email" inputmode="email" required aria-required="true">
+          </div>
+          <div class="form-field form-field-full">
+            <label for="inquiry-type">お問い合わせ種別 <span>REQUIRED</span></label>
+            <div class="select-wrap">
+              <select id="inquiry-type" name="inquiry_type" required aria-required="true">
+                <option value="" selected disabled>選択してください</option>
+                <option value="ソムリエサービス">ソムリエサービス</option>
+                <option value="ワインイベント / GLASS VIBE">ワインイベント / GLASS VIBE</option>
+                <option value="ワインセレクション">ワインセレクション</option>
+                <option value="飲食店コンサルティング">飲食店コンサルティング</option>
+                <option value="飲食店立ち上げ支援">飲食店立ち上げ支援</option>
+                <option value="SNS / Instagramコンサルティング">SNS / Instagramコンサルティング</option>
+                <option value="取材 / メディア出演">取材 / メディア出演</option>
+                <option value="その他">その他</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-field form-field-full">
+            <label for="inquiry-message">お問い合わせ内容 <span>REQUIRED</span></label>
+            <textarea id="inquiry-message" name="message" rows="7" required aria-required="true"></textarea>
+          </div>
+          <input type="hidden" name="_subject" value="Sommelier Sho Yamazaki 公式サイトからのお問い合わせ">
+          <div class="form-submit form-field-full">
+            <button type="submit" data-submit-button><span>SEND INQUIRY</span><small>お問い合わせを送信</small><i aria-hidden="true">→</i></button>
+            <p class="form-status" data-form-status role="status" aria-live="polite"></p>
+          </div>
+        </form>
+      </div>
     </section>
   </main>
   <footer><a class="brand footer-brand" href="#top"><span>SY</span><small>SOMMELIER SHO YAMAZAKI</small></a><div><a href="#about">ABOUT</a><a href="#services">SERVICES</a><a href="#contact">CONTACT</a><a class="is-pending" data-contact-link="instagram" aria-disabled="true">INSTAGRAM ↗</a></div><p>© <span data-year></span> SHO YAMAZAKI</p></footer>
