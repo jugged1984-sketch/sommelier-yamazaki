@@ -7,11 +7,13 @@
   <meta name="theme-color" content="#10100f">
   <meta property="og:title" content="Sommelier Sho Yamazaki｜ソムリエ山崎翔">
   <meta property="og:description" content="ワインを、もっと自由に。人生を、もっと豊かに。">
+  <meta property="og:image" content="1000002187.jpg">
   <meta property="og:type" content="website">
   <meta property="og:locale" content="ja_JP">
   <title>Sommelier Sho Yamazaki｜ワインを、もっと自由に。</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preload" as="image" href="1000002187.jpg" fetchpriority="high">
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Noto+Serif+JP:wght@300;400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
   <script src="script.js" defer></script>
@@ -30,6 +32,7 @@
 
   <main id="main">
     <section class="hero" id="top" aria-labelledby="hero-title">
+      <img class="hero-image" src="1000002187.jpg" alt="" width="1920" height="1280" fetchpriority="high">
       <div class="hero-glow" aria-hidden="true"></div>
       <div class="hero-inner">
         <p class="eyebrow reveal">TOKYO · YUSHIMA</p>
@@ -46,9 +49,10 @@
         <h2 id="about-title">一杯のワインから、<br>新しい景色を。</h2>
         <div class="about-copy"><p>東京・湯島を拠点に活動するソムリエ、山崎 翔。</p><p>ワインを単なる飲み物としてではなく、食、人、空間、そして音楽をつなぐ文化として捉え、その魅力を自由な感性で提案します。</p></div>
       </div>
-      <div class="portrait placeholder" role="img" aria-label="ソムリエ山崎のポートレート写真掲載予定">
-        <div class="monogram">SY</div><p>PORTRAIT<br><span>Photograph coming soon</span></p>
-      </div>
+      <figure class="portrait">
+        <img src="1000002827.jpg" alt="ワインボトルとワイングラスを手にするソムリエ山崎翔" width="768" height="1024" loading="lazy" decoding="async">
+        <figcaption><span>SHO YAMAZAKI</span><small>SOMMELIER / TOKYO · YUSHIMA</small></figcaption>
+      </figure>
     </section>
 
     <section class="projects" id="places" aria-label="プロジェクト">
