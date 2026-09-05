@@ -22,7 +22,7 @@ python3 -m http.server 8000
 .
 ├── index.html   # ページ構造、文章、SEOメタ情報
 ├── styles.css   # デザイン、レスポンシブ、アクセシビリティ対応
-├── script.js    # モバイルメニュー、ヘッダー、年表示
+├── script.js    # モバイルメニュー、ヘッダー、年表示、フォーム送信
 ├── 1000002187.jpg # HEROの赤ワイン写真
 ├── 1000002827.jpg # ABOUTのプロフィール写真
 └── README.md    # 本ドキュメント
@@ -36,7 +36,7 @@ python3 -m http.server 8000
 4. **GLASS VIBE** — ワイン・ライフスタイルコミュニティ
 5. **SERVICES** — 提供サービス一覧
 6. **PHILOSOPHY** — ブランド思想
-7. **CONTACT** — 仕事・イベント・コンサルティングの問い合わせ導線
+7. **CONTACT** — 仕事・イベント・コンサルティングの問い合わせフォーム
 
 各セクションは独立しているため、今後プロジェクトや下層ページを追加しやすい構成です。
 
@@ -53,7 +53,6 @@ HEROとABOUTには実写真を使用しています。プロジェクトの2箇�
 
 ## 公開前に必要な変更
 
-- `script.js` 冒頭の `contactLinks.inquiry` を正式な問い合わせ先（`mailto:` URLなど）へ変更
 - `script.js` 冒頭の `contactLinks.instagram` を正式なInstagramプロフィールURLへ変更
 - OGP画像、canonical URL、faviconを追加
 - 実写真と、写真に即した代替テキストを追加
