@@ -174,7 +174,7 @@
 .hero .eyebrow { margin: 0 0 clamp(1.35rem, 3vh, 2.3rem); }
 .hero h1.hero-brand { margin: 0; font: inherit; line-height: 1; letter-spacing: normal; }
 .hero-logo-frame { display: block; width: min(100%, 900px); aspect-ratio: 3.55 / 1; margin: 0 auto; overflow: hidden; }
-.hero h1 .hero-logo-frame img { display: block; width: 100%; height: auto; transform: translateY(-8.5%); clip-path: polygon(0 0,100% 0,100% 71%,80% 71%,80% 65%,0 65%); filter: drop-shadow(0 4px 18px rgba(0,0,0,.35)); }
+.hero h1 .hero-logo-frame img { display: block; width: 100%; height: auto; transform: translateY(-8.5%); clip-path: polygon(0 0,100% 0,100% 71%,80% 71%,80% 63%,0 63%); filter: drop-shadow(0 4px 18px rgba(0,0,0,.35)); }
 .hero h1 .hero-name { display: block; margin-top: clamp(1rem, 2vh, 1.45rem); color: var(--paper); font: 500 clamp(.82rem, 1.25vw, 1.05rem)/1.2 var(--serif); letter-spacing: .38em; }
 .hero-divider { display: block; width: 42px; margin: clamp(.9rem, 1.8vh, 1.3rem) auto 0; border-top: 1px solid var(--gold); }
 .hero-role { margin: clamp(.9rem, 1.8vh, 1.3rem) 0 0; font-size: clamp(.82rem, 1.1vw, 1rem); font-weight: 300; letter-spacing: .18em; }
