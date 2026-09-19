@@ -206,3 +206,80 @@
   .hero-role { font-size: .73rem; letter-spacing: .08em; }
   .hero-fields { font-size: .48rem; letter-spacing: .09em; }
 }
+
+/* Partnership portfolio: reuse the existing palette, photography and type. */
+[id] { scroll-margin-top: 94px; }
+.hero { height: auto; min-height: min(900px, 100svh); padding: 120px 0 90px; }
+.hero-logo-frame { width: min(68%, 480px); }
+.hero .hero-role { font-size: clamp(.95rem, 1.5vw, 1.25rem); letter-spacing: .07em; }
+.hero .hero-copy { margin-top: 1.7rem; font-size: clamp(1.55rem, 2.8vw, 2.6rem); line-height: 1.65; letter-spacing: .09em; }
+.hero-summary { max-width: 620px; margin: 1.25rem auto 0; font-family: system-ui, sans-serif; font-size: .9rem; line-height: 1.9; color: #e1ded6; }
+.hero-actions { display: flex; flex-wrap: wrap; justify-content: center; align-items: center; gap: 1rem 2rem; margin-top: 1.7rem; }
+.dx-button { display: inline-flex; align-items: center; justify-content: space-between; gap: 1.3rem; min-height: 48px; padding: 1rem 1.4rem; border: 1px solid #b8a06f; background: #d6c399; color: #171610; font: 500 .85rem/1.5 system-ui, sans-serif; text-shadow: none; }
+.dx-button:hover { background: #ecdfc1; }
+.dx-link { display: inline-block; padding: .8rem 0; border-bottom: 1px solid var(--gold); font: 400 .85rem/1.7 system-ui, sans-serif; }
+.dx-button:focus-visible, .dx-link:focus-visible, .dx-card a:focus-visible { outline: 2px solid var(--gold); outline-offset: 5px; }
+.dx-projects { padding: 5rem max(24px, 7vw); background: var(--charcoal); }
+.dx-heading { max-width: 1100px; margin: 0 auto 2.5rem; }
+.dx-heading h2 { margin: .8rem 0; font: 500 clamp(2.2rem, 4vw, 3.2rem)/1.1 var(--serif); letter-spacing: .1em; }
+.dx-heading > p:last-child { font-size: .9rem; line-height: 1.8; }
+.dx-project-grid { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 1.25rem; max-width: 1100px; margin: auto; }
+.dx-card { display: flex; flex-direction: column; padding: clamp(1.5rem,3vw,2.7rem); border: 1px solid var(--line); background: #141413; }
+.dx-card-featured { border-color: #b59c68; background: #25221c; }
+.dx-card .eyebrow { font-size: .68rem; line-height: 1.8; letter-spacing: .13em; }
+.dx-card h3 { margin: .6rem 0 1rem; font: 500 clamp(2.5rem,4vw,3.1rem)/1.1 var(--serif); }
+.dx-card > p:not(.eyebrow) { font: 400 .9rem/1.95 system-ui,sans-serif; color: #c5c1b8; margin: .5rem 0; }
+.dx-card > p.dx-card-lead { color: var(--paper); font: 400 1.05rem/1.8 var(--jp); }
+.dx-card .text-link { margin-top: auto; padding-top: 1.5rem; align-self: flex-start; font-size: .8rem; }
+.dx-other { max-width: 1100px; margin: 2rem auto 0; font: 400 .8rem/2 system-ui,sans-serif; color: #c5c1b8; }
+.dx-other a { display: inline-block; text-decoration: underline; text-underline-offset: 4px; }
+.profile-role { font-size: .9rem; color: #63512f; }
+.vinq-page .site-header { background: rgba(17,17,16,.97); }
+.vinq-intro { padding: 160px 24px 85px; text-align: center; background: radial-gradient(ellipse at top, #302820, #111110 70%); }
+.vinq-intro h1 { font: 500 clamp(4rem,10vw,7rem)/1 var(--serif); letter-spacing: .12em; margin: 1.3rem 0 2rem; }
+.vinq-tagline { font-size: clamp(1.3rem,3vw,2.3rem); line-height: 1.8; }
+.vinq-intro-copy { max-width: 700px; margin: auto; font: 400 .95rem/2 system-ui,sans-serif; color: #cdc7bb; }
+.vinq-section { padding: 5rem max(24px, calc((100% - 960px)/2)); }
+.vinq-section h2 { font-size: clamp(1.6rem,3.2vw,2.5rem); font-weight: 400; line-height: 1.7; margin: 1rem 0 2rem; }
+.vinq-section > p:not(.eyebrow), .vinq-section article p, .partnership-grid p { font: 400 .95rem/2 system-ui,sans-serif; }
+.vinq-paper { background: var(--paper); color: var(--ink); }
+.vinq-paper .eyebrow { color: #75603b; }
+.learning-loop { list-style: none; padding: 0; margin: 3rem 0 0; }
+.learning-loop li { display: grid; grid-template-columns: 3.5rem minmax(0,1fr); gap: 1rem; padding: 1.5rem 0; border-top: 1px solid #d1caba; }
+.step-number { font: 500 2rem/1.4 var(--serif); color: #79613b; }
+.learning-loop h3 { margin: 0 0 .5rem; font: 600 1.4rem/1.6 var(--serif); }
+.learning-loop small { display: inline-block; margin-left: 1rem; font: 500 .85rem/1.6 system-ui,sans-serif; }
+.learning-loop p { margin: 0; font: 400 .9rem/1.9 system-ui,sans-serif; color: #545047; }
+.vinq-statement { border-left: 2px solid var(--gold); padding-left: 1.25rem; }
+.partnership-grid { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 1.5rem; margin-top: 2.5rem; }
+.partnership-grid > div { padding: 1.5rem; border: 1px solid var(--line); }
+.partnership-grid h3, .collab-ideas h3 { font: 500 1.05rem/1.7 var(--jp); margin: 0 0 1rem; }
+.partnership-grid p { color: #cdc7bb; margin: 0; }
+.vinq-section .partnership-formula { text-align: center; font-size: 1.15rem; padding: 1.5rem 0; color: #d8c49a; }
+.partnership-formula span { padding: 0 .6rem; }
+.collab-ideas { display: grid; gap: 1.5rem; }
+.collab-ideas article { border-bottom: 1px solid #d1caba; padding-bottom: 1rem; }
+.collab-ideas p { color: #545047; margin: .5rem 0; }
+.vinq-section .scope-note { margin-top: 2rem; font-size: .8rem; color: #625c51; }
+.vinq-closing { text-align: center; }
+.vinq-closing .dx-button { margin: 1.5rem 0; }
+@media(max-width:850px) {
+  .hero { min-height: 100svh; padding: 110px 0 76px; }
+  .hero-inner { padding-top: 0; }
+  .hero-logo-frame { width: min(85%,390px); }
+  .hero .eyebrow { margin-bottom: 1rem; }
+  .hero .hero-role { font-size: clamp(.84rem,3.6vw,1.1rem); }
+  .hero .hero-copy { margin-top: 1.6rem; }
+  .hero-summary { max-width: 480px; font-size: .82rem; }
+  .hero-actions { gap: .6rem 1.5rem; }
+  .hero .scroll-cue { display: none; }
+  .dx-projects { padding: 4rem 22px; }
+  .dx-project-grid, .partnership-grid { grid-template-columns: minmax(0,1fr); }
+  .dx-card { padding: 1.6rem; }
+  .vinq-intro { padding: 125px 22px 65px; }
+  .vinq-intro-copy br { display: none; }
+  .vinq-section { padding: 4rem 22px; }
+  .learning-loop li { grid-template-columns: 2.4rem minmax(0,1fr); gap: .65rem; }
+  .learning-loop small { display: block; margin-left: 0; }
+  .partnership-formula span { display: block; }
+}

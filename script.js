@@ -22,7 +22,7 @@ document.querySelector('[data-year]').textContent = new Date().getFullYear();
 
 const inquiryForm = document.querySelector('[data-inquiry-form]');
 
-inquiryForm.addEventListener('submit', async (event) => {
+inquiryForm?.addEventListener('submit', async (event) => {
   event.preventDefault();
 
   if (!inquiryForm.reportValidity()) return;
@@ -56,3 +56,8 @@ inquiryForm.addEventListener('submit', async (event) => {
     submitButton.innerHTML = defaultButtonText;
   }
 });
+
+// Keep the partnership inquiry on the existing contact route.
+if (inquiryForm && new URLSearchParams(window.location.search).get('inquiry') === 'vinq') {
+  inquiryForm.querySelector('[name="inquiry_type"]').value = 'VINQの協業相談';
+}

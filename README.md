@@ -1,66 +1,29 @@
-# Sommelier Sho Yamazaki — Official Website
+# 山崎 翔 — 個人サイト
 
-東京・湯島を拠点に活動する「ソムリエ山崎（Sommelier Sho Yamazaki）」の公式サイト初期版です。個人ブランドを中心に、ワインバー、コミュニティ、各種ソムリエ／コンサルティングサービスへの入口をまとめた、依存ライブラリのない静的サイトです。
+飲食DXプロデューサー / ソムリエ 山崎翔の営業・協業向けポートフォリオ。既存の写真・配色・静的構成を維持しています。
 
-## 起動方法
+## 正本と公開
 
-### そのまま開く
+- 本番: https://jugged1984-sketch.github.io/sommelier-yamazaki/
+- VINQ協業ページ: https://jugged1984-sketch.github.io/sommelier-yamazaki/vinq/
+- GitHub: jugged1984-sketch/sommelier-yamazaki
+- 公開ブランチ: main
+- デプロイ先: GitHub Pages（既存の pages build and deployment）
+- フレームワーク・依存ライブラリ・ローカルビルド工程なし
 
-`index.html` をブラウザで開いて閲覧できます。
+## 構成
 
-### ローカルサーバーで確認する（推奨）
+- index.html: HERO / PROJECTS / ABOUT / SERVICES / PHILOSOPHY / CONTACT
+- vinq/index.html: スクール・講師向け協業案内、現在の学習ループ、問い合わせ導線
+- styles.css: 共通デザイン、スマートフォン対応
+- script.js: メニュー、ヘッダー、年表示、既存Formspree送信、VINQ問い合わせ種別の引き継ぎ
+- favicon.svg: SYのファビコン
+- 1000002187.jpg / 1000002827.jpg / yamazaki-logo.png: 既存写真・ロゴ
 
-```bash
-python3 -m http.server 8000
-```
+`python -m http.server 8000` 等で静的配信して確認できます。VINQページはディレクトリURL `/vinq/` を使用します。GitHub Pagesのサブディレクトリ配信に合わせ、内部リンクとアセットは相対パスです。
 
-ブラウザで <http://localhost:8000> を開いてください。ビルド作業やパッケージのインストールは不要です。
+## 掲載範囲
 
-## ファイル構成
+各プロジェクトは紹介のみ。VINQ・AKISEKI・MACHIRU・Tsuki-akari等の本体、DB、デプロイ設定は変更しません。監修者の氏名・経歴は未許諾のため掲載しません。教材連携・OEM・ホワイトラベルは相談段階として記載しています。
 
-```text
-.
-├── index.html   # ページ構造、文章、SEOメタ情報
-├── styles.css   # デザイン、レスポンシブ、アクセシビリティ対応
-├── script.js    # モバイルメニュー、ヘッダー、年表示、フォーム送信
-├── 1000002187.jpg # HEROの赤ワイン写真
-├── 1000002827.jpg # ABOUTのプロフィール写真
-└── README.md    # 本ドキュメント
-```
-
-## ページ構成
-
-1. **HERO** — ブランド名とメインコピー
-2. **ABOUT** — ソムリエ山崎の紹介
-3. **tsuki-akari** — 湯島のワインバー
-4. **GLASS VIBE** — ワイン・ライフスタイルコミュニティ
-5. **SERVICES** — 提供サービス一覧
-6. **PHILOSOPHY** — ブランド思想
-7. **CONTACT** — 仕事・イベント・コンサルティングの問い合わせフォーム
-
-各セクションは独立しているため、今後プロジェクトや下層ページを追加しやすい構成です。
-
-## 写真
-
-HEROとABOUTには実写真を使用しています。プロジェクトの2箇所は、今後の実写真への差し替えを想定したプレースホルダーです。
-
-| 場所 | 推奨する写真 | HTML上の目印 |
-| --- | --- | --- |
-| tsuki-akari | 店内、ワイン、カウンターの横位置写真 | `.project-dark .project-visual` |
-| GLASS VIBE | イベントや乾杯の横位置写真 | `.project-light .project-visual` |
-
-`assets/images/` ディレクトリを作成して画像を保存し、対象要素へ `<picture>` / `<img>` を追加するか、CSSの `background-image` を指定してください。表示速度のため、AVIFまたはWebP形式、適切なサイズ、`width` / `height` の明示、遅延読み込み（ファーストビュー外は `loading="lazy"`）を推奨します。
-
-## 公開前に必要な変更
-
-- OGP画像、canonical URL、faviconを追加
-- 実写真と、写真に即した代替テキストを追加
-- 必要に応じてプライバシーポリシーや問い合わせフォームを追加
-
-## デザイン／品質方針
-
-- 黒・チャコール・オフホワイトを基調に、控えめなゴールドを使用
-- セマンティックHTML、スキップリンク、フォーカス可能な操作、適切なARIA属性を採用
-- 850px以下でモバイルレイアウトと開閉式ナビゲーションに切り替え
-- `prefers-reduced-motion` に対応
-- JavaScriptなしでも本文と問い合わせ導線を閲覧可能
+お問い合わせは既存のFormspree設定を使用します。実送信による確認は営業宛のテスト通知を発生させるため実施していません。AKISEKIとMACHIRUは紹介と相談導線を設け、外部URLの新規推定はしていません。
