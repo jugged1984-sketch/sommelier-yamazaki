@@ -5,7 +5,7 @@
 ## 正本と公開
 
 - 本番: https://sho-yamazaki.jp/
-- VINQ協業ページ: https://sho-yamazaki.jp/vinq/
+- VINQプロダクト紹介ページ: https://sho-yamazaki.jp/vinq/
 - GitHub: jugged1984-sketch/sommelier-yamazaki
 - 公開ブランチ: main
 - デプロイ先: GitHub Pages（既存の pages build and deployment）
@@ -14,7 +14,8 @@
 ## 構成
 
 - index.html: HERO / PROJECTS / ABOUT / SERVICES / PHILOSOPHY / CONTACT
-- vinq/index.html: スクール・講師向け協業案内、現在の学習ループ、問い合わせ導線
+- vinq/index.html: プロダクト紹介、現在の学習体験、VPの将来構想、問い合わせ導線
+- vinq/vinq.css: VINQページ専用の追加スタイル
 - styles.css: 共通デザイン、スマートフォン対応
 - script.js: メニュー、ヘッダー、年表示、既存Formspree送信、VINQ問い合わせ種別の引き継ぎ
 - favicon.svg: SYのファビコン
@@ -24,7 +25,7 @@
 
 ## 掲載範囲
 
-各プロジェクトは紹介のみ。VINQ・AKISEKI・MACHIRU・Tsuki-akari等の本体、DB、デプロイ設定は変更しません。監修者の氏名・経歴は未許諾のため掲載しません。教材連携・OEM・ホワイトラベルは相談段階として記載しています。
+各プロジェクトは紹介のみ。VINQ・AKISEKI・MACHIRU・Tsuki-akari等の本体、DB、デプロイ設定は変更しません。監修者の氏名・経歴は未許諾のため掲載しません。VPによる実店舗での特典利用は将来構想として記載しています。実画面素材は未掲載です。
 
 お問い合わせは既存のFormspree設定を使用します。実送信による確認は営業宛のテスト通知を発生させるため実施していません。AKISEKIとMACHIRUは紹介と相談導線を設け、外部URLの新規推定はしていません。
 

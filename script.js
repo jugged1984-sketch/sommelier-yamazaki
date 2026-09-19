@@ -57,7 +57,7 @@ inquiryForm?.addEventListener('submit', async (event) => {
   }
 });
 
-// Keep the partnership inquiry on the existing contact route.
+// Keep the VINQ inquiry on the existing contact route.
 if (inquiryForm && new URLSearchParams(window.location.search).get('inquiry') === 'vinq') {
-  inquiryForm.querySelector('[name="inquiry_type"]').value = 'VINQの協業相談';
+  inquiryForm.querySelector('[name="inquiry_type"]').value = 'VINQについてのお問い合わせ';
 }
