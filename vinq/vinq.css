@@ -14,7 +14,52 @@
 .vinq-vp p:not(.eyebrow) { font: 400 .95rem/2 system-ui, sans-serif; }
 .vinq-vp .vinq-vp-note { color: #d8c49a; font-size: .85rem; }
 .vinq-closing > p { max-width: 700px; margin: 1rem auto; }
+.vinq-intro { position: relative; isolation: isolate; padding: 155px 4vw 85px; overflow: hidden; }
+.vinq-backdrop { position: absolute; inset: 0; z-index: -2; }
+.vinq-backdrop img { width: 100%; height: 100%; object-fit: cover; object-position: 60% center; }
+.vinq-intro::before { content: ''; position: absolute; inset: 0; z-index: -1; background: linear-gradient(90deg, rgba(16,16,15,.98),rgba(16,16,15,.82) 47%,rgba(16,16,15,.58)),linear-gradient(0deg,#111110,transparent 40%); }
+.vinq-hero-layout { max-width: 1320px; margin: auto; display: grid; grid-template-columns: minmax(0,.9fr) minmax(0,1.1fr); align-items: center; gap: 2.5rem; }
+.vinq-hero-message { text-align: left; }
+.vinq-intro h1 { margin: 1rem 0; }
+.vinq-tagline { font-size: clamp(1.35rem,2.4vw,2rem); }
+.vinq-hero-message .hero-actions { justify-content: flex-start; }
+.vinq-device { display: block; padding: 7px; background: #171716; border: 1px solid #8d7953; border-radius: 28px; box-shadow: 0 18px 40px #0005; overflow: hidden; }
+.vinq-device img { display: block; width: 100%; height: auto; border-radius: 21px; }
+.vinq-devices { position: relative; height: 470px; max-width: 620px; margin: 0 auto; }
+.vinq-devices .vinq-device { position: absolute; width: 35%; max-width: 210px; top: 30px; }
+.vinq-device-left { left: 2%; transform: rotate(-8deg); }
+.vinq-devices .vinq-device-center { left: 32%; top: 0; z-index: 2; }
+.vinq-device-right { right: 1%; transform: rotate(8deg); }
+.vinq-screen-label { color: #dbcba9; font: 400 .7rem/1.8 system-ui,sans-serif; letter-spacing: .13em; margin: 1.5rem 0 .6rem; }
+.vinq-screen-label span { display: block; letter-spacing: .05em; }
+.vinq-gallery { display: grid; grid-template-columns: repeat(4,minmax(0,1fr)); gap: 1.5rem; margin-top: 3rem; scroll-margin-top: 105px; }
+.vinq-screen-card { margin: 0; min-width: 0; }
+.vinq-screen-card .vinq-device { max-width: 280px; margin: auto; transition: transform .2s; }
+.vinq-screen-card .vinq-device:hover { transform: translateY(-4px); }
+.vinq-screen-card figcaption { margin-top: 1.5rem; }
+.vinq-screen-card .eyebrow { font-size: .7rem; letter-spacing: .1em; }
+.vinq-screen-card h3 { font: 500 1rem/1.8 var(--jp); margin: .5rem 0; }
+.vinq-screen-card p, .vinq-screen-card figcaption a { font: 400 .85rem/1.9 system-ui,sans-serif; }
+.vinq-screen-card figcaption a { text-decoration: underline; text-underline-offset: 4px; }
+.vinq-section .vinq-capture-note { margin: 2rem 0; font-size: .75rem; color: #625c51; }
+@media (max-width: 1100px) {
+  .vinq-hero-layout { grid-template-columns: minmax(0,1fr); max-width: 720px; }
+  .vinq-hero-message { text-align: center; }
+  .vinq-hero-message .hero-actions { justify-content: center; }
+  .vinq-hero-visual { width: 100%; max-width: 620px; margin: 1rem auto 0; }
+  .vinq-gallery { grid-template-columns: repeat(2,minmax(0,1fr)); gap: 2.5rem; }
+}
+@media (prefers-reduced-motion: reduce) { .vinq-screen-card .vinq-device { transition: none; } }
 @media (max-width: 600px) {
+  .vinq-intro { padding: 120px 22px 60px; }
+  .vinq-devices { height: auto; aspect-ratio: 1.1; }
+  .vinq-devices .vinq-device { padding: 3px; border-radius: 15px; top: 16px; }
+  .vinq-devices .vinq-device-center { top: 0; }
+  .vinq-devices img { border-radius: 11px; }
+  .vinq-gallery { grid-template-columns: minmax(0,1fr); gap: 3rem; }
+  .vinq-screen-card { max-width: 300px; margin: auto; }
+  .vinq-screen-card .vinq-device { max-width: 260px; }
+  .vinq-screen-label { margin-top: .5rem; }
   .vinq-questions { grid-template-columns: minmax(0, 1fr); }
   .vinq-flow { flex-direction: column; gap: 1.4rem; }
   .vinq-flow li { text-align: center; }
