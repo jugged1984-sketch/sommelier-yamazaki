@@ -283,3 +283,12 @@
   .learning-loop small { display: block; margin-left: 0; }
   .partnership-formula span { display: block; }
 }
+
+/* SEO: keep the existing hero design while including the visible role in H1. */
+.hero h1.hero-brand .hero-role { display: block; margin-top: clamp(.9rem, 1.8vh, 1.3rem); font-size: clamp(.95rem, 1.5vw, 1.25rem); line-height: 1.8; letter-spacing: .07em; }
+@media (max-width: 850px) { .hero h1.hero-brand .hero-role { margin-top: 1rem; font-size: clamp(.84rem, 3.6vw, 1.1rem); } }
+.hero h1 .hero-name { text-transform: uppercase; }
+.profile-links { margin-top: 2rem; }
+.profile-links ul { display: flex; flex-wrap: wrap; gap: .75rem 1.4rem; list-style: none; margin: 1rem 0 0; padding: 0; }
+.profile-links a, .about-copy a { text-decoration: underline; text-underline-offset: .25em; }
+.profile-links a { display: inline-block; padding: .5rem 0; font: 500 .85rem/1.5 system-ui, sans-serif; }
