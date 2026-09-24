@@ -1,0 +1,89 @@
+/* Scoped to this page. Colors and typography inherit the existing portfolio. */
+.akiseki-page .site-header { background:rgba(17,17,16,.97); }
+.akiseki-page .aki-wrap { width:min(1180px,88%); margin-inline:auto; }
+.akiseki-page .aki-hero { padding:150px 0 90px; background:radial-gradient(ellipse at 80% 35%,#262b24 0,transparent 55%),#111110; }
+.akiseki-page .aki-hero-grid { display:grid;grid-template-columns:1.05fr 1fr;gap:5%;align-items:center; }
+.akiseki-page h1 { font:500 clamp(4rem,7.5vw,7.3rem)/1 var(--serif);letter-spacing:.04em;margin:1.4rem 0 1.8rem; }
+.akiseki-page .aki-official-logo { display:block; width:280px; max-width:100%; height:auto; }
+.akiseki-page .aki-tagline { font:400 clamp(2rem,3.8vw,3.5rem)/1.55 var(--jp);letter-spacing:.09em;margin:0 0 1.4rem; }
+.akiseki-page .aki-lead { font:400 1.12rem/1.9 var(--jp);color:#d6c399; }
+.akiseki-page .aki-copy { max-width:460px;font:400 .95rem/2 system-ui,sans-serif;color:#c8c5bc; }
+.akiseki-page .aki-hero .hero-actions { justify-content:flex-start;gap:1rem 1.7rem; }
+.akiseki-page .aki-trial { display:flex;align-items:center;gap:.7rem;font:400 .78rem/1.8 system-ui,sans-serif;color:#b6b1a5;margin-top:1.7rem; }
+.akiseki-page .aki-trial span { width:6px;height:6px;background:#b8b397;border-radius:50%; }
+.akiseki-page .aki-hero-screens { display:grid;grid-template-columns:1fr 1fr;align-items:start;gap:14px;max-width:485px;margin:auto; }
+.akiseki-page .aki-phone { margin:0;min-width:0; }
+.akiseki-page .aki-phone>a { display:block;padding:7px;background:#242521;border:1px solid #8d7953;border-radius:24px;overflow:hidden;box-shadow:0 24px 40px #0005; }
+.akiseki-page .aki-phone img { display:block;width:100%;height:auto;border-radius:16px; }
+.akiseki-page .aki-phone-staff { margin-top:48px; }
+.akiseki-page .aki-phone figcaption { display:flex;justify-content:space-between;padding:14px 7px 0;font:400 .78rem/1.5 system-ui,sans-serif;color:#d6c399; }
+.akiseki-page .aki-screen-note { grid-column:1/-1;text-align:center;font:400 .71rem/1.9 system-ui,sans-serif;color:#b2b0a6;margin:.7rem 0 0; }
+.akiseki-page .aki-section { padding:90px 0; }
+.akiseki-page .aki-paper { background:var(--paper);color:var(--ink); }
+.akiseki-page h2 { font:400 clamp(1.7rem,2.8vw,2.65rem)/1.65 var(--jp);letter-spacing:.04em;margin:.9rem 0 1.8rem;overflow-wrap:anywhere; }
+.akiseki-page .aki-section p:not(.eyebrow,.aki-statement,.aki-small) { font:400 .95rem/2.1 system-ui,sans-serif;color:#c5c1b7; }
+.akiseki-page .aki-paper p:not(.eyebrow,.aki-statement,.aki-small) { color:#57534a; }
+.akiseki-page .aki-story-grid { display:grid;grid-template-columns:1.15fr 1fr;gap:7%;align-items:center; }
+.akiseki-page .aki-statement { font:400 1.3rem/1.95 var(--jp);border-left:2px solid var(--gold);padding:.2rem 0 .2rem 1.3rem;margin:1.8rem 0; }
+.akiseki-page .aki-story-photo { margin:0; }
+.akiseki-page .aki-story-photo img { display:block;width:100%;height:auto; }
+.akiseki-page .aki-story-photo figcaption { display:flex;flex-direction:column;gap:.6rem;margin-top:1.3rem;font:400 .75rem/1.8 system-ui,sans-serif;color:#666055; }
+.akiseki-page .aki-story-photo figcaption span { color:#76613e;font:500 1rem var(--serif);letter-spacing:.16em; }
+.akiseki-page .aki-story-photo .dx-link { margin-top:.8rem; }
+.akiseki-page .aki-use-grid { display:grid;grid-template-columns:1fr 1fr;gap:5%;margin:2.5rem 0 1.2rem; }
+.akiseki-page .aki-use { border-top:1px solid var(--gold);padding:1.5rem 0; }
+.akiseki-page .aki-number { font:400 2.5rem var(--serif);color:#b59e73; }
+.akiseki-page h3 { font:400 1.3rem/1.8 var(--jp);margin:.7rem 0; }
+.akiseki-page .aki-use .aki-use-foot { border-top:1px solid #ffffff20;padding-top:1rem;font-size:.8rem;color:#cdbb94; }
+.akiseki-page .aki-small { font:400 .8rem/1.9 system-ui,sans-serif;color:#b5afa3; }
+.akiseki-page .aki-paper .aki-small { color:#6a6459; }
+.akiseki-page .aki-section-heading { display:flex;justify-content:space-between;align-items:center;gap:2rem; }
+.akiseki-page .aki-features { display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:0 3rem;margin:1rem 0 2rem; }
+.akiseki-page .aki-features>div { border-top:1px solid #c9bea7;padding:1.6rem 0; }
+.akiseki-page .aki-features dt { font:500 1rem/1.8 var(--jp); }
+.akiseki-page .aki-features dd { margin:.6rem 0 0;font:400 .9rem/2 system-ui,sans-serif;color:#625c51; }
+.akiseki-page .aki-proof-grid,.akiseki-page .aki-free-grid { display:grid;grid-template-columns:1.15fr 1fr;gap:10%;align-items:center; }
+.akiseki-page .aki-proof-card { border:1px solid var(--gold);padding:2.5rem;background:#1b1d18; }
+.akiseki-page .aki-proof-card h3 { font:400 3.5rem/1.2 var(--serif); }
+.akiseki-page .aki-proof-card .dx-button { margin-top:1rem; }
+.akiseki-page .aki-free-card { border:1px solid #b7a17a;padding:2rem; }
+.akiseki-page .aki-free-card>p:first-child { letter-spacing:.14em;font:500 1rem var(--serif);color:#72603e; }
+.akiseki-page .aki-free-card dl { display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin:1.6rem 0; }
+.akiseki-page .aki-free-card dt { font:400 .85rem system-ui,sans-serif; }
+.akiseki-page .aki-free-card dd { font:400 4rem/1.2 var(--serif);margin:.8rem 0; }
+.akiseki-page .aki-free-card dd span { font:400 1rem var(--jp);margin-left:.5rem; }
+.akiseki-page .aki-free-card .dx-button { display:flex;width:100%; }
+.akiseki-page .aki-registration { padding:0;list-style:none;counter-reset:registration; }
+.akiseki-page .aki-registration li { counter-increment:registration;border-bottom:1px solid #d0c6b3;padding:.9rem 0;font:400 .9rem/1.8 system-ui,sans-serif; }
+.akiseki-page .aki-registration li:before { content:'0' counter(registration);color:#806a44;font-family:var(--serif);margin-right:1rem; }
+.akiseki-page .aki-vision { text-align:center;background:#292824; }
+.akiseki-page .aki-vision h2 { font-size:clamp(1.7rem,3.6vw,3.3rem); }
+.akiseki-page a:focus-visible { outline:2px solid var(--gold);outline-offset:5px; }
+.akiseki-page h2 { text-wrap:balance; }
+@media(max-width:1000px) and (min-width:851px){.akiseki-page .aki-wrap{width:92%}.akiseki-page .aki-hero-grid{gap:3%}.akiseki-page .aki-hero-screens{gap:10px}.akiseki-page .aki-copy{font-size:.9rem}}
+@media(max-width:850px){
+ .akiseki-page .aki-wrap{width:calc(100% - 44px)}
+ .akiseki-page .aki-hero{padding:115px 0 55px}
+ .akiseki-page .aki-hero-grid,.akiseki-page .aki-story-grid,.akiseki-page .aki-proof-grid,.akiseki-page .aki-free-grid{grid-template-columns:1fr;gap:2.5rem}
+ .akiseki-page h1{font-size:4.5rem;margin:1rem 0}
+ .akiseki-page .aki-official-logo{width:220px}
+ .akiseki-page .aki-tagline{font-size:2.1rem;line-height:1.55}
+ .akiseki-page .aki-copy{font-size:.93rem}
+ .akiseki-page .aki-hero-screens{max-width:440px;width:100%;gap:10px;margin-top:.5rem}
+ .akiseki-page .aki-phone>a{padding:4px;border-radius:16px}
+ .akiseki-page .aki-phone img{border-radius:11px}
+ .akiseki-page .aki-phone-staff{margin-top:28px}
+ .akiseki-page .aki-phone figcaption{font-size:.71rem;padding-inline:0}
+ .akiseki-page .aki-screen-note{font-size:.72rem;letter-spacing:0}
+ .akiseki-page .aki-section{padding:58px 0}
+ .akiseki-page .aki-section-heading{display:block}
+ .akiseki-page .aki-use-grid{grid-template-columns:1fr;gap:0;margin-top:1.5rem}
+ .akiseki-page .aki-features{grid-template-columns:1fr;gap:0}
+ .akiseki-page .aki-features>div{padding:1.2rem 0}
+ .akiseki-page .aki-statement{font-size:1.08rem;padding-left:1rem}
+ .akiseki-page .aki-proof-card,.akiseki-page .aki-free-card{padding:1.5rem}
+ .akiseki-page .aki-proof-card h3{font-size:3rem}
+ .akiseki-page .aki-vision .hero-actions{align-items:stretch;flex-direction:column}
+ .akiseki-page .aki-vision .dx-link{align-self:center}
+}
+@media(max-width:380px){.akiseki-page .aki-wrap{width:calc(100% - 36px)}.akiseki-page h1{font-size:3.8rem}.akiseki-page .aki-tagline{font-size:1.9rem}.akiseki-page h2{font-size:1.45rem}.akiseki-page .dx-button{font-size:.8rem;padding:1rem;gap:.6rem}.akiseki-page .aki-proof-card,.akiseki-page .aki-free-card{padding:1.1rem}}

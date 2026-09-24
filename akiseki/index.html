@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AKISEKI｜飲食店の「今、入れる」を届ける。｜山崎 翔</title>
+  <meta name="description" content="飲食店の空席情報をお客様へ届けるAKISEKI。山崎翔が飲食現場の課題から開発し、東京・湯島のTsuki-akariで実証中。実際の顧客・店舗管理画面、無料登録、現在の機能を紹介します。">
+  <meta name="theme-color" content="#111110">
+  <link rel="canonical" href="https://sho-yamazaki.jp/akiseki/">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="ja_JP">
+  <meta property="og:site_name" content="山崎 翔 / Sho Yamazaki">
+  <meta property="og:title" content="AKISEKI｜今、入れる店がわかる。">
+  <meta property="og:description" content="飲食現場から生まれ、Tsuki-akariで実証中。空席情報を届けるAKISEKIの実画面と、開発のストーリー。">
+  <meta property="og:url" content="https://sho-yamazaki.jp/akiseki/">
+  <meta property="og:image" content="https://sho-yamazaki.jp/akiseki/assets/og-akiseki.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="AKISEKI正式ロゴと、飲食現場から開発する山崎 翔。">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="AKISEKI｜今、入れる店がわかる。">
+  <meta name="twitter:description" content="山崎翔が飲食現場から開発。東京・湯島のTsuki-akariで実証している空席情報サービス。">
+  <meta name="twitter:image" content="https://sho-yamazaki.jp/akiseki/assets/og-akiseki.jpg">
+  <link rel="icon" href="../favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Noto+Serif+JP:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../styles.css">
+  <link rel="stylesheet" href="akiseki.css">
+  <script src="../script.js" defer></script>
+  <script src="../navigation.js" defer></script>
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@graph":[{"@type":"WebPage","@id":"https://sho-yamazaki.jp/akiseki/#webpage","url":"https://sho-yamazaki.jp/akiseki/","name":"AKISEKI｜今、入れる店がわかる。","inLanguage":"ja","description":"飲食現場から生まれ、Tsuki-akariで実証しているAKISEKIの紹介。","about":{"@id":"https://sho-yamazaki.jp/akiseki/#service"}},{"@type":"SoftwareApplication","@id":"https://sho-yamazaki.jp/akiseki/#service","name":"AKISEKI","applicationCategory":"BusinessApplication","operatingSystem":"Web browser","url":"https://akiseki-beta.jugged1984.workers.dev/","description":"飲食店のスタッフが更新する空席情報を、お客様へ届けるWebサービス。","creator":{"@type":"Person","@id":"https://sho-yamazaki.jp/#person","name":"山崎 翔","url":"https://sho-yamazaki.jp/"},"offers":{"@type":"Offer","name":"AKISEKI FREE","price":"0","priceCurrency":"JPY"}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"山崎 翔","item":"https://sho-yamazaki.jp/"},{"@type":"ListItem","position":2,"name":"AKISEKI","item":"https://sho-yamazaki.jp/akiseki/"}]}]}
+  </script>
+</head>
+<body class="akiseki-page">
+  <a class="skip-link" href="#main">本文へ移動</a>
+  <header class="site-header" data-header>
+    <a class="brand" href="../#top" aria-label="山崎 翔 / Sho Yamazaki ホーム"><strong>山崎 翔</strong><small>SHO YAMAZAKI</small></a>
+    <button class="menu-button" type="button" aria-expanded="false" aria-controls="navigation"><span></span><span></span><span class="sr-only">メニューを開く</span></button>
+    <nav id="navigation" class="navigation" aria-label="メインナビゲーション"><a href="../#places">Projects</a><a href="../vinq/">VINQ</a><a href="./" aria-current="page">AKISEKI</a><a href="../#about">About</a><a href="../#contact">Contact</a></nav>
+  </header>
+  <main id="main">
+    <section class="aki-hero" aria-labelledby="aki-title">
+      <div class="aki-wrap aki-hero-grid">
+        <div class="aki-hero-copy">
+          <p class="eyebrow">FROM THE RESTAURANT FLOOR</p>
+          <h1 id="aki-title"><img class="aki-official-logo" src="../assets/brand/akiseki-official-560.webp" srcset="../assets/brand/akiseki-official-280.webp 280w, ../assets/brand/akiseki-official-560.webp 560w" sizes="(max-width:850px) 220px, 280px" width="560" height="560" alt="AKISEKI（アキセキ）正式ロゴ。椅子と黄色い光。" fetchpriority="high"></h1>
+          <p class="aki-tagline">今、入れる店が<br>わかる。</p>
+          <p class="aki-lead">お店の「空いています」を、<br>今、お店を探している人へ。</p>
+          <p class="aki-copy">山崎 翔が飲食の現場から開発した、空席情報を届けるサービス。東京・湯島のワインバー「Tsuki-akari」で実証を続けています。</p>
+          <div class="hero-actions"><a class="dx-button" href="https://akiseki-beta.jugged1984.workers.dev/s/tsuki-akari" target="_blank" rel="noopener noreferrer">実際の店舗ページを見る <span aria-hidden="true">↗</span></a><a class="dx-link" href="#story">生まれた背景を読む <span aria-hidden="true">↓</span></a></div>
+          <p class="aki-trial"><span aria-hidden="true"></span> Tsuki-akariで実証中 / AKISEKI β</p>
+        </div>
+        <div class="aki-hero-screens" aria-label="AKISEKI本番環境の実画面">
+          <figure class="aki-phone aki-phone-public"><a href="assets/public-production.webp" target="_blank" rel="noopener" aria-label="AKISEKI顧客画面の実画像を拡大"><img src="assets/public-production.webp" alt="Tsuki-akariの顧客画面。撮影時は営業時間外で、お知らせと電話ボタンを表示。" width="375" height="858" fetchpriority="high"></a><figcaption>お客様の画面 <span>↗</span></figcaption></figure>
+          <figure class="aki-phone aki-phone-staff"><a href="assets/staff-production.webp" target="_blank" rel="noopener" aria-label="AKISEKI店舗管理画面の実画像を拡大"><img src="assets/staff-production.webp" alt="Tsuki-akariの店舗管理画面。カウンター7席と4名テーブルの実際の席配置。" width="375" height="1019" decoding="async"></a><figcaption>お店の管理画面 <span>↗</span></figcaption></figure>
+          <p class="aki-screen-note">本番の実画面 · 2026年9月24日撮影<br>撮影時は営業時間外。画像は現在の空席状況ではありません。</p>
+        </div>
+      </div>
+    </section>
+    <section class="aki-paper aki-section" id="story" aria-labelledby="story-title">
+      <div class="aki-wrap aki-story-grid">
+        <div><p class="eyebrow">01 / THE STORY</p><h2 id="story-title">飲食の現場には、<br>まだ届いていない情報がある。</h2>
+          <p>満席でお客様をご案内できないお店がある。<br>その一方で、近くには空席のあるお店もある。</p>
+          <p>お客様は、電話をかけたり店頭まで足を運んだりしなければ、その「今」を知ることができません。</p>
+          <p class="aki-statement">お店が知っている空席と、<br>お客様が知りたい空席をつなぐ。</p>
+          <p>Tsuki-akariを運営する山崎 翔が、日々の店舗運営を起点に開発したのがAKISEKIです。実際の店で使いながら、忙しい営業中にも続けられる仕組みを確かめています。</p>
+        </div>
+        <figure class="aki-story-photo"><img src="../assets/photos/story-1280.webp" srcset="../assets/photos/story-640.webp 640w, ../assets/photos/story-1280.webp 1280w" sizes="(max-width:850px) 90vw, 42vw" alt="店内のグラス棚の前で、ワインの香りを確かめる山崎 翔" width="1280" height="854" loading="lazy" decoding="async"><figcaption><span>SHO YAMAZAKI</span>ソムリエ / Tsuki-akari運営 / AKISEKI企画・開発</figcaption><a class="dx-link" href="../#about">山崎 翔のプロフィール <span aria-hidden="true">→</span></a></figure>
+      </div>
+    </section>
+    <section class="aki-section" id="how-it-works" aria-labelledby="how-title">
+      <div class="aki-wrap"><p class="eyebrow">02 / HOW IT WORKS</p><h2 id="how-title">お店は、席をタップ。<br>お客様は、お店の「今」を見る。</h2>
+        <div class="aki-use-grid">
+          <article class="aki-use"><span class="aki-number">01</span><h3>お店の営業中に</h3><p>管理画面で席の状態を更新。着席したら使用中に、席が空いたら空席に。更新情報は顧客画面へ自動で反映されます。</p><p class="aki-use-foot">営業開始 → 席の状態を更新 → お客様へ</p></article>
+          <article class="aki-use"><span class="aki-number">02</span><h3>お客様のお店選びに</h3><p>店舗ページや店頭QRから、空席情報とお知らせを確認。必要に応じて電話で確かめ、その日の来店を考えられます。</p><p class="aki-use-foot">店舗ページ・QR → 状況を確認 → 電話・来店検討</p></article>
+        </div>
+        <p class="aki-small">表示は店舗スタッフの更新に基づきます。予約や席の確保を保証するものではありません。</p>
+      </div>
+    </section>
+    <section class="aki-paper aki-section" aria-labelledby="features-title">
+      <div class="aki-wrap"><div class="aki-section-heading"><div><p class="eyebrow">03 / AVAILABLE NOW</p><h2 id="features-title">今、使えること。</h2></div><p>毎日の営業と、<br>お客様への案内に必要な機能を。</p></div>
+        <dl class="aki-features"><div><dt>空席情報の更新</dt><dd>店舗ごとの席配置から状態を更新。顧客画面へ自動反映。</dd></div><div><dt>営業時間・祝日設定</dt><dd>曜日別の営業時間、日をまたぐ営業、祝日の扱いを設定。</dd></div><div><dt>お店からのお知らせ</dt><dd>一言コメントで、今日の営業やお店からの情報を掲載。</dd></div><div><dt>電話への導線</dt><dd>電話番号を設定し、顧客画面から確認しやすく。</dd></div><div><dt>集客リンク・店頭QR</dt><dd>Instagram、店舗HPなどの掲載先に合わせたリンクとQR。</dd></div><div><dt>アクセスの確認</dt><dd>閲覧数、流入元、電話ボタンのタップなどを店舗ごとに確認。</dd></div></dl>
+        <p class="aki-small">β版として改善を続けています。祝日設定の対応年は管理画面でご確認ください。</p>
+      </div>
+    </section>
+    <section class="aki-section aki-proof" aria-labelledby="proof-title"><div class="aki-wrap aki-proof-grid"><div><p class="eyebrow">04 / IN THE FIELD</p><h2 id="proof-title">Tsuki-akariで使い、<br>現場で確かめる。</h2><p>東京・湯島のワインバーが、AKISEKIの実証の場です。席更新の操作感や、お客様への伝わり方を、実際の店舗運営のなかで検証しています。</p><a class="dx-link" href="https://tsuki-akari.tokyo/" target="_blank" rel="noopener noreferrer">Tsuki-akariの店舗サイト <span aria-hidden="true">↗</span></a></div><div class="aki-proof-card"><p class="eyebrow">TOKYO · YUSHIMA</p><h3>Tsuki-akari</h3><p>カウンター7席と、4名テーブル。<br>この店の営業から、少しずつ。</p><a class="dx-button" href="https://akiseki-beta.jugged1984.workers.dev/s/tsuki-akari" target="_blank" rel="noopener noreferrer">現在の店舗ページを開く <span aria-hidden="true">↗</span></a></div></div></section>
+    <section class="aki-paper aki-section" id="free" aria-labelledby="free-title"><div class="aki-wrap aki-free-grid"><div><p class="eyebrow">05 / AKISEKI FREE</p><h2 id="free-title">あなたのお店も、<br>無料で始められます。</h2><p>アカウントのメール確認後、店舗情報と席を準備。内容を確認して、店舗ページを公開できます。</p><ol class="aki-registration"><li>メール確認</li><li>店舗情報・席の準備</li><li>内容確認・公開</li></ol></div><div class="aki-free-card"><p>AKISEKI FREE</p><dl><div><dt>初期費用</dt><dd>0<span>円</span></dd></div><div><dt>月額</dt><dd>0<span>円</span></dd></div></dl><a class="dx-button" href="https://akiseki-beta.jugged1984.workers.dev/signup" target="_blank" rel="noopener noreferrer">無料でお店を登録する <span aria-hidden="true">↗</span></a><p class="aki-small">クレジットカード不要。登録はAKISEKIのサービス画面で行います。</p></div></div></section>
+    <section class="aki-section aki-vision" aria-labelledby="vision-title"><div class="aki-wrap"><p class="eyebrow">NEXT / 目指す未来</p><h2 id="vision-title">「今から2人で入れる店」を<br>探せる街へ。</h2><p>一つのお店の空席から、街の選択肢へ。<br>お店と、今入りたい人がつながる仕組みを育てていきます。</p><p class="aki-small">人数・地域でお店を横断して探す機能は、将来の構想です。</p><div class="hero-actions"><a class="dx-button" href="https://akiseki-beta.jugged1984.workers.dev/signup" target="_blank" rel="noopener noreferrer">無料でお店を登録する <span aria-hidden="true">↗</span></a><a class="dx-link" href="../#inquiry-form">実証・協業について相談する <span aria-hidden="true">→</span></a></div></div></section>
+  </main>
+  <footer><a class="brand footer-brand" href="../"><span>SY</span><small>SHO YAMAZAKI</small></a><div><a href="../#places">PROJECTS</a><a href="../vinq/">VINQ</a><a href="../#contact">CONTACT</a></div><p>© <span data-year></span> SHO YAMAZAKI</p></footer>
+</body>
+</html>
